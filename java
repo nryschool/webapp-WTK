@@ -23,7 +23,7 @@
 <script src="https://cdn.datatables.net/plug-ins/1.11.3/dataRender/percentageBars.js"></script>
 
 <script>
-      google.script.run.withSuccessHandler(showData).getData2();
+      google.script.run.withSuccessHandler(showData).getData();
       function showData(data) {
         $(document).ready(function () {
           var dataSet = data;
@@ -31,7 +31,7 @@
           data[0].forEach(function (e) {
             head.push({ sTitle: e });
           });
-          $("#example2").DataTable({
+          $("#example").DataTable({
             data: dataSet.slice(1),
             columns: head,
             responsive: true,
