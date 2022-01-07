@@ -12,7 +12,16 @@ columnDefs: [ {
     },
       
      ],
-     
+    
+rowGroup: {
+      dataSrc: [2]
+       },
+        
+        
+searching: false,
+paging: false,   
+        
+        
  function getData(){
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName('xxxx');
