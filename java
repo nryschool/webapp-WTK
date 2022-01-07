@@ -21,7 +21,7 @@
 <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
 <script src="https://cdn.datatables.net/plug-ins/1.11.3/dataRender/hyperLink.js"></script>
 <script src="https://cdn.datatables.net/plug-ins/1.11.3/dataRender/percentageBars.js"></script>
-
+<script src="https://cdn.datatables.net/rowgroup/1.1.4/js/dataTables.rowGroup.min.js"></script>
 <script>
       google.script.run.withSuccessHandler(showData).getData();
       function showData(data) {
