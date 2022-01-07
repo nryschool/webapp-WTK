@@ -35,3 +35,10 @@
     </div>
  </div>
   </section>
+
+//พื้นหลัง bg รูปภาพ
+ background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+      /* background-image: url('https://drive.google.com/uc?id=1dTFM-nfRrV78HlVmrlZnvPNudFuegLnJ'); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
