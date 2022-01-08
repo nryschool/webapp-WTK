@@ -1,3 +1,4 @@
+
 function processForm(formObject) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var ws = ss.getSheetByName("contactUs");
@@ -24,6 +25,6 @@ function record(data) {
   }
   
   var ss = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet()
-  ss.appendRow([new Date(),data.num,data.gender, data.address, data.email,linkFile])
+  ss.appendRow([data.num,data.subject,data.name, data.details, data.link,linkFile])
   return true;
 }
