@@ -2,45 +2,48 @@
     <!-- Form Name -->
   <legend class="text-center mt-2">แบบบันทึกข้อมูล!</legend>
   
-       <div class="row questionBox mb-2">https://github.com/nryschool/webapp-WTK
-       <div class="col">
-          <label style="font-size:16px; color:black" for="num">เลขเอกสาร</label>
-        <input class="form-control" type="text" id="num" >            
-        </div>             
-        </div> 
-
-        <div class="row questionBox mb-2">
-      <div class="col">
+       <div class="row questionBox mb-2">
+       <div class="col-6">
+          <label style="font-size:16px; color:black" for="num">วันที่บันทึก</label>
+        <input class="form-control" type="date" id="num" >            
+        </div>  
+     <div class="col-6">
       
-          <label style="font-size:16px; color:black" for="gender">ประเภทเอกสาร</label>
-          <select class="form-control" id="gender">
+          <label style="font-size:16px; color:black" for="subject">ประเภทงาน</label>
+          <select class="form-control" id="subject">
           <option>เลือก</option>
-          <option>ทะเบียนนำส่ง</option>
-          <option>ทะเบียนคำสั่ง</option>
-          <option>บันทึกข้อความ</option>
-          <option>ทะเบียนใบลา</option>
+          <option>WEBAPP</option>
+          <option>DataStudio</option>
+          <option>GoogleForm</option>
+          <option>ระบบแจ้งเตือน</option>
+          <option>อื่นๆ</option>
           </select>      
+         </div>
+        </div> 
    
-      </div>
-   </div>     
-         
        <div class="row questionBox mb-2">
        <div class="col">
-          <label style="font-size:16px; color:black" for="address"> เรื่อง</label>
-         <input class="form-control" type="text" id="address" >       
+          <label style="font-size:16px; color:black" for="name"> ชื่อวิทยากร</label>
+         <input class="form-control" type="text" id="name" >   
+        </div>             
+        </div>   
+       <div class="row questionBox mb-2">
+       <div class="col">
+          <label style="font-size:16px; color:black" for="details"> เรื่องรายละเอียด</label>
+         <textarea class="form-control" type="text" id="details" >  </textarea>        
         </div>             
         </div>
 
         <div class="row questionBox mb-2">
        <div class="col">
-          <label style="font-size:16px; color:black" for="email"> รายละเอียด</label>
-         <textarea rows="2"  class="form-control" type="text" id="email" >  </textarea>      
+          <label style="font-size:16px; color:black" for="link"> ลิ้งไฟล์</label>
+         <input class="form-control" type="text" id="link" >   
         </div>             
         </div> 
 
       <div class="row questionBox mb-2">
        <div class="col">
- <label style="font-size:16px; color:black" for="file">ไฟล์เอกสาร</label>
+ <label style="font-size:16px; color:black" for="file">ไฟล์งาน</label>
       <form>
         <input class="form-control" type="file" name="myFile" multiple>
         <span id="resp-spinnerA" class="spinner-border spinner-grow-sm text-danger d-none" role="status" aria-hidden="true"></span>
