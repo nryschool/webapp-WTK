@@ -39,10 +39,10 @@
 
 </script>
 
+
 <!-- JavaScript คำสั่งการบันทึกข้อมูลลง SHEET ไฟล์อัพโหลดข้อมูล-->
 <script>        
 
-//script upload file    
     document.getElementsByName('myFile')[0].addEventListener('change',uploadFile)
     function uploadFile(e){
 
@@ -68,22 +68,24 @@
 
    function save(){
      var num = document.getElementById("num");
-     var gender = document.getElementById("gender");
-     var address = document.getElementById("address"); 
-     var email = document.getElementById("email"); 
+     var subject = document.getElementById("subject");
+     var name = document.getElementById("name");
+     var details = document.getElementById("details"); 
+     var link = document.getElementById("link"); 
      var input = document.getElementsByName('myFile')[0];
      var file = input.value.split("\\");
      var filename = file[file.length-1];
      var submit2 = document.getElementById('submitBtn');
      var data = {
                       num: num.value,
-                      gender: gender.value,
-                      address: address.value,
-                      email: email.value,
+                      subject: subject.value,
+                      name: name.value,
+                      details: details.value,
+                      link: link.value,
                       filename: filename
                     }
      
-     if(num.value == "Choose here" ||  gender.value == "Choose here" || input.value == "" || address.value == "" || email.value == "" || submit2.value == "Upload"){
+     if(num.value == "" ||  subject.value == "" || details.value == "" || link.value == ""){
          Swal.fire({text: "คำเตือน!!!"+"\n\n"+"กรุณากรอกข้อมูลให้ครบ.", icon:"error",showConfirmButton: false,timer:2000})     
      }else{
          document.getElementById('resp-spinner5').classList.remove("d-none");
@@ -100,8 +102,9 @@
      document.getElementById('resp-spinner7').classList.add("d-none");
      Swal.fire({text: "การดำเนินการสำเร็จ"+"\n\n"+"บันทึกข้อมูลเรียบร้อย", icon:"success", timer:2000})
      document.getElementById("num").value = ""
-     document.getElementById("gender").value = ""
-     document.getElementById("address").value = ""
-     document.getElementById("email").value = ""
+     document.getElementById("subject").value = ""
+     document.getElementById("name").value = ""
+     document.getElementById("details").value = ""
+     document.getElementById("link").value = ""
    }
 </script>
