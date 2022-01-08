@@ -1,0 +1,29 @@
+function processForm(formObject) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ws = ss.getSheetByName("contactUs");
+  var now = new Date();
+  ws.appendRow([now,
+    formObject.fname,
+    formObject.email,
+    formObject.subject,
+    formObject.comment]);
+}
+
+function uploadFiles(data){
+ var file = data.myFile;
+ var folder = DriveApp.getFolderById('13UvEHDK_k-f5hf3NO4J2tGKxodBdFIeT');//เปลี่ยนเป็นไอดีโฟลเดอร์ของเรา
+ var createFile = folder.createFile(file);
+ return createFile.getUrl();
+}
+
+function record(data) {
+  var files = DriveApp.getFilesByName(data.filename);
+  while (files.hasNext()) { 
+  var file = files.next();
+  var linkFile = file.getUrl();
+  }
+  
+  var ss = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet()
+  ss.appendRow([new Date(),data.num,data.gender, data.address, data.email,linkFile])
+  return true;
+}
