@@ -1,0 +1,14 @@
+     <h4 class="card-header prompt">เก็บงาน ZOOM <span class="iconify" data-icon="flat-ui:save" data-toggle='modal' data-target='#myModal2'></span> </h4>
+     
+       <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+ 
+ <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" onclick="clearForm();">&times;</button>
+                  <?!= include('contact'); ?> 
+                </div>
+              </div>
+            </div>
+          </div>
