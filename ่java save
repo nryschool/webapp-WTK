@@ -1,7 +1,3 @@
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-/** Contac Us form submitting. */
   function preventFormSubmit() {
     var forms = document.querySelectorAll('form');
     for (var i = 0; i < forms.length; i++) {
