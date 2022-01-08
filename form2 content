@@ -1,0 +1,58 @@
+<form id="myForm" onsubmit="handleFormSubmit(this)">
+
+  <!-- Form Name -->
+  <legend class="text-center mt-2">ติดต่อสอบถาม!</legend>
+
+  <!-- Text input Full Name-->  
+  <div class="col-12  mt-2">
+    <label class="visually" for ="fname">ชื่อสกุล</label>  
+      <div class="input-group">
+        <div class="input-group-text justify-content-center" style="width:60px;">
+          <i class="fas fa-user-tag fa-lg"></i>
+        </div>
+          <input class="form-control" id="fname" name="fname" placeholder="" type="text" required>
+      </div>
+  </div>
+
+  <!-- Text input email-->  
+  <div class="col-12  mt-2">
+    <label class="visually" for ="email">อีเมล</label>
+      <div class="input-group">
+        <div class="input-group-text justify-content-center" style="width:60px;">
+          <i class="fas fa-at"></i>
+        </div>
+          <input class="form-control" id="email" name="email" placeholder="" type="email" required>
+      </div>
+  </div>
+
+
+  <!-- Text input Subject -->
+  <div class="col-12  mt-2">
+    <label class="visually" for ="subject">เรื่อง</label>  
+      <div class="input-group">
+        <div class="input-group-text justify-content-center" style="width:60px;">
+          <i class="fas fa-angle-double-right fa-lg"></i>
+        </div>
+        <input class="form-control" id="subject" name="subject" placeholder="" type="text" required>
+      </div>
+  </div>
+
+  <!-- Text area -->
+  <div class="col-12  mt-2">
+    <label for="comment">รายละเอียด</label>
+      <div class="input-group">
+        <div class="input-group-text justify-content-center" style="width:60px;">
+          <i class="fas fa-comments fa-lg"></i>
+        </div>
+          <textarea rows="4" id="comment" name="comment" class="form-control" placeholder="Write something here" required></textarea>
+      </div>
+  </div>
+
+  <!-- Button send-->
+  <div class="form-group mb-4">
+    <label class="col-md-12 control-label"></label>
+    <div class="col-md-12 text-center">
+      <button type="submit" class="btn btn-outline-primary" >Send <i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</form>
